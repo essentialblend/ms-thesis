@@ -1,10 +1,5 @@
 module naturals.semi-ring.prereqs where
 
-open import type-variables.type-vars
-
-open import pred-logic.def
-open import pred-logic.props
-
 open import naturals.def
 open import naturals.ops
 
@@ -16,25 +11,7 @@ open import naturals.props.mult.neutr
 open import naturals.props.mult.assoc
 open import naturals.props.mult.comm
 
-open import naturals.props.distr
-
-
--- Definition: Monoid
-record IsMonoid
-  (e : A) (_∙_ : A → A → A) : prop where
-    field
-      leftNeutr  : {x : A} → (e ∙ x) ≡ x
-      rightNeutr : {x : A} → (x ∙ e) ≡ x
-      assoc   : {x y z : A} → ((x ∙ y) ∙ z) ≡ (x ∙ (y ∙ z))
-
--- Definition: Commutative Monoid
-record IsCommMonoid
-  (e : A) (_∙_ : A → A → A) : prop where
-    field
-      isMonoid : IsMonoid e (_∙_)
-      isComm : { x y : A } → (x ∙ y) ≡ (y ∙ x)
-
-
+open import naturals.semi-ring.records
 
 -- Proof: Show that ℕ under + is a (commutative) monoid
 addIsMonoid : IsMonoid (zero) (_+_)
