@@ -7,8 +7,8 @@ To be determined...
 ### Prereqs
 
 - **Git** to clone the repo
-- **CMake >= 3.10** for generating the build files
-- **Agda >= 2.7.0.1** to type-check the proofs. Please see https://agda.readthedocs.io/en/stable/getting-started/installation.html for platform-specific instructions
+- **CMake >= 3.10** for generating build files
+- **Agda >= 2.7.0.1** for type-checking all proofs. Please see https://agda.readthedocs.io/en/stable/getting-started/installation.html for platform-specific instructions
 
 ### Build & Verify 
 
