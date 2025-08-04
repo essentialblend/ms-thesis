@@ -41,7 +41,7 @@ This project develops a fully constructive, machine-verified formalization of th
 
 ### Extensibility and Documentation
 - The codebase totals 34 Agda modules and ~900 lines of Agda code (as measured by `cloc`).
-- Nearly 100 specialized lemmas and proofs encapsulated into  generic, reusable, extensible interfaces--- i.e., extend to other number systems and/or abstract algebraic structures.
+- Nearly 100 specialized lemmas and proofs encapsulated into  generic, reusable, extensible interfaces, i.e., extend to other number systems and/or abstract algebraic structures.
 - Each module begins with a declaration, followed by necessary imports, lemmas, and concluding with the proofs. The entire development compiles in a single step with `agda --ignore-interfaces -i .`.
 
 ## Results
