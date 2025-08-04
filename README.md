@@ -1,10 +1,8 @@
 # Type-theoretic Proofs for the Ring Axioms of the Integers
 
-This research project was submitted as part of requirements for my MS. The objective was to prove the existence of a certain mathematical construct called a _Ring_. This was achieved with the help of a computer-aided proof-assistant called _Agda_, a programming language based on intuitionistic type theory, also called Martin-Löf type theory (MLTT).
+_A complete, standalone, and machine-verified formalization of the integers as a commutative ring, implemented from first principles in Agda._
 
-This research project was supervised by Prof. Thorsten Altenkirch and I’m forever grateful for his time, expertise, and empathy towards my journey into this fantastic subject. 
-
-I'm lucky to have Dan from over at the Univalent Agda Discord server for a close friend who spent countless hours just so I get to feel less clueless with each passing day.
+This research project was submitted as part of the requirements for my MSc in Computer Science (University of Nottingham). The objective was to formally prove the axioms of a commutative ring for the integers using Agda, a dependently-typed functional programming language based on Martin-Löf type theory.
 
 ## Build Instructions
 
@@ -62,3 +60,6 @@ By reconstructing number systems and building more complex structures over them 
 
 ### Maintainability
 Verification takes mere seconds on a modern computer. The library is easy to navigate: each top-level record lives in `integers/comm-ring/records.agda` and all supporting lemmas are grouped under `integers/props`.
+
+## Acknowledgements
+This research project was supervised by Prof. Thorsten Altenkirch and I’m forever grateful for his time, expertise, and empathy towards my journey into this fantastic subject. I'm also lucky to have Daniel from over at Univalent Agda for a mentor for his invaluable time and guidance.
